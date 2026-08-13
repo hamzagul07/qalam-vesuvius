@@ -53,6 +53,7 @@ One line per step. Newest at the bottom. Blockers logged honestly.
 ### Open blockers
 
 1. ~~LICENSE placeholder~~ — resolved, set to Hamza Gul Hassan.
-2. No GitHub remote yet — repo is not public. Needs your call on the repo name.
+2. ~~No GitHub remote~~ — resolved: published public at
+   https://github.com/hamzagul07/qalam-vesuvius
 3. Baseline notebook is **untested**: it needs a Kaggle GPU session with the
    `vesuvius-challenge-ink-detection` dataset attached, which I cannot run from here.
