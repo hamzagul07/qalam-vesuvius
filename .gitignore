@@ -13,6 +13,9 @@ checkpoints/
 *.ckpt
 *.onnx
 
+# ---- Private working notes (strategy, target selection) — never published ----
+private/
+
 # ---- Secrets — never commit any of these ----
 .env
 .env.*

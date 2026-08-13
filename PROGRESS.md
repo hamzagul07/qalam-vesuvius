@@ -23,9 +23,11 @@ One line per step. Newest at the bottom. Blockers logged honestly.
   independently confirmed by the user mid-session.
 - **Key strategic finding:** the `help wanted` label on villa is officially defined as
   *"Good candidate for a Progress Prize"*. Only 3 issues carry it; one (#192) is also
-  `good first issue`. Full analysis in [recon/RECON.md](recon/RECON.md).
-- Wrote `recon/RECON.md`: per-candidate existing tools, demand evidence, S/M/L sizing,
-  risks, and a top-3 ranked shortlist with a v1 spec for each.
+  `good first issue`.
+- Wrote up the recon as local working notes (per-candidate existing tools, demand evidence,
+  S/M/L sizing, risks, and a ranked shortlist). Kept out of the public repo deliberately:
+  published work belongs in the open, but a ranked map of *unclaimed* opportunities is
+  just a head start for everyone else. Findings get published as they are acted on.
 - `uv venv --python 3.12 .venv` + `uv pip install vesuvius pillow matplotlib` → **vesuvius 0.2.4**.
   (System python is 3.9.6, too old; `uv` is what villa's own CONTRIBUTING recommends.)
 - `vesuvius.accept_terms --yes` → agreement saved. No account required.
