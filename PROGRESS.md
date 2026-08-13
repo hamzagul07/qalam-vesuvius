@@ -42,9 +42,17 @@ One line per step. Newest at the bottom. Blockers logged honestly.
 - Wrote `notebooks/baseline_kaggle.ipynb` — a faithful cell-split of
   `baseline/train_ink_baseline.py` with the training logic unchanged.
 
+- Kaggle bridge: CLI 2.2.4 authed as `hamzagulhassan` via `~/.kaggle/access_token` (KGAT style,
+  mode 600). `kaggle/` holds the pushable kernel; `tools/{push,status,pull}.sh` drive it.
+  Competition rules for `vesuvius-challenge-ink-detection` were already accepted.
+- **PUBLISHED:** https://github.com/hamzagul07/qalam-vesuvius (public, `main`, 3 commits).
+  LICENSE now carries the real copyright holder. Pre-flight secret scan clean: no `.env*`,
+  `access_token`, `kaggle.json` or `KGAT_` string in any commit, and the published tree was
+  re-fetched from the API and re-audited after the push.
+
 ### Open blockers
 
-1. `LICENSE` copyright holder is a placeholder (needs your name).
+1. ~~LICENSE placeholder~~ — resolved, set to Hamza Gul Hassan.
 2. No GitHub remote yet — repo is not public. Needs your call on the repo name.
 3. Baseline notebook is **untested**: it needs a Kaggle GPU session with the
    `vesuvius-challenge-ink-detection` dataset attached, which I cannot run from here.
