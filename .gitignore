@@ -1,0 +1,71 @@
+# ---- Vesuvius campaign ----
+# Data and outputs are never committed. Scroll data is terabyte-scale and
+# governed by the data agreement; model outputs are reproducible from code.
+data/
+out/
+*.zarr/
+*.tif
+*.tiff
+!recon/**/*.png
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# Testing / linting caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
