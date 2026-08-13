@@ -1,4 +1,6 @@
-# VESUVIUS AUGUST CAMPAIGN — BATTLE PLAN
+# Qalam — Vesuvius Challenge campaign
+
+**Vesuvius August campaign — battle plan**
 
 Mission: ship one real, open-source contribution to the Vesuvius Challenge
 before the monthly deadline (Aug 31, 11:59pm Pacific). Deadline is ~17 days away.
