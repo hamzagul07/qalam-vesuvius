@@ -13,12 +13,18 @@ checkpoints/
 *.ckpt
 *.onnx
 
-# ---- Secrets ----
+# ---- Secrets — never commit any of these ----
 .env
 .env.*
-!.env.example
+.env.local
+.env*
 *.pem
 credentials.json
+
+# Kaggle credentials (KGAT access token and the legacy json)
+.kaggle/
+access_token
+kaggle.json
 
 # ---- Python ----
 __pycache__/
