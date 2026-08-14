@@ -40,7 +40,16 @@ except ImportError:  # tqdm is nice, not required
 # CONFIG — the only block you should need to touch
 # ----------------------------------------------------------------------------
 CFG = {
-    "data_dir": "/kaggle/input/vesuvius-challenge-ink-detection/train",
+    # Kaggle mounts competition data at one of two places depending on the
+    # kernel's docker image: the classic path, or under competitions/ on the
+    # byod images. Detect it so the same file runs unmodified in both.
+    "data_dir": next(
+        (p for p in [
+            "/kaggle/input/vesuvius-challenge-ink-detection/train",
+            "/kaggle/input/competitions/vesuvius-challenge-ink-detection/train",
+        ] if os.path.isdir(p)),
+        "/kaggle/input/vesuvius-challenge-ink-detection/train",
+    ),
     "fragment": "1",     # "1" is the classic starter fragment
     "z_start": 24,       # the middle slices carry most of the ink signal
     "z_dim": 16,         # how many slices the model sees (input channels)
